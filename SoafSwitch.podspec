@@ -41,3 +41,19 @@ SoafSwitch is a replacement of UISwitch, with fully customizable appearance sett
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
+# Workaround for Cocoapods issue #7606
+#   * May resolve code signification issue with Cocoapods 1.5.0v or later,
+#   * Should be removed when the problem solved.
+#   * Credit to @soleares on GitHub by providing workaround
+#   * link : https://github.com/CocoaPods/CocoaPods/issues/7606#issuecomment-381279098
+
+#   * Commenting workaround cause of error message when pod lib lint
+#   * Error message : "undefined method `post_install' for Pod:Module."
+
+#post_install do |installer|
+#    installer.pods_project.build_configurations.each do |config|
+#        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+#        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+#    end
+#end
