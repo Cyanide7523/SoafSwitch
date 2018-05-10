@@ -11,7 +11,7 @@
 
 
 
-currently, [SoafSwitch's `@IBDesignable` has a problem with Cocoapods version after 1.5.0](https://github.com/CocoaPods/CocoaPods/issues/7606), so currently trying to workaround it. wait for new release, with more features, bug fixes, and completed readme document.
+currently, [SoafSwitch's `@IBDesignable` has a problem with Cocoapods version after 1.5.0](https://github.com/CocoaPods/CocoaPods/issues/7606), so I'm trying to workaround it. wait for new release, with more features, bug fixes, and completed readme document.
 
 if you **really** need this.. try [**Manually Install**](#manually-install) below. It won't affected by Cocoapods' issue.
 
