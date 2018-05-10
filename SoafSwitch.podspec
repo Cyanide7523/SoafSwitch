@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SoafSwitch'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'SoafSwitch, A super-duper way of making designed switch.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ SoafSwitch is a replacement of UISwitch, with fully customizable appearance sett
   s.swift_version = '4.0'
 
   s.source_files = 'SoafSwitch/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'SoafSwitch' => ['SoafSwitch/Assets/*.png']
   # }
