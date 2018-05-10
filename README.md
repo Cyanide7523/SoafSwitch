@@ -25,7 +25,7 @@ SoafSwitch focuses on full customization avaliablility, so you can customize it 
 
 
 
-SoafSwitch supports `@IBDesignable`, so you can configure the switch in Interface Builder with live preview.
+SoafSwitch is `@IBDesignable`, so you can configure the switch in Interface Builder with live preview.
 
 
 
