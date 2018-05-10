@@ -1,0 +1,6 @@
+framework module SoafSwitch {
+  umbrella header "SoafSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}

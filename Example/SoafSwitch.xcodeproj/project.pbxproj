@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		036B572DCD23DB8ABED4DD09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		036B572DCD23DB8ABED4DD09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2346BF5A20D310C7D08B5223 /* Pods_SoafSwitch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoafSwitch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36460D128589BC01D85142C0 /* Pods-SoafSwitch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoafSwitch_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoafSwitch_Example/Pods-SoafSwitch_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		596FB9BC8303ED715FF6A6EF /* Pods-SoafSwitch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoafSwitch_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoafSwitch_Tests/Pods-SoafSwitch_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		70A067BBF8B676F38001D31B /* Pods_SoafSwitch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoafSwitch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADB6F9868688F36520F82557 /* SoafSwitch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SoafSwitch.podspec; path = ../SoafSwitch.podspec; sourceTree = "<group>"; };
-		E3D96EBB29ED4B5828F08F7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		ADB6F9868688F36520F82557 /* SoafSwitch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SoafSwitch.podspec; path = ../SoafSwitch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E3D96EBB29ED4B5828F08F7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EE00770C18EC918D1C6F39EA /* Pods-SoafSwitch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoafSwitch_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoafSwitch_Example/Pods-SoafSwitch_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
