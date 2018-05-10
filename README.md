@@ -29,7 +29,7 @@ SoafSwitch supports `@IBDesignable`, so you can configure the switch in Interfac
 
 
 
-##How to Use
+## How to Use
 
 if you installed SoafSwitch with Cocoapods, you should implement this code to use SoafSwitch
 
@@ -49,7 +49,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-###Install using Cocoapods
+### Install using Cocoapods
 
 SoafSwitch is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
