@@ -11,31 +11,58 @@
 
 
 
-currently, [SoafSwitch's `@IBDesignable` has a problem with Cocoapods version after 1.5.0](https://github.com/CocoaPods/CocoaPods/issues/7606), so I'm trying to workaround it. wait for new release, with more features, bug fixes, and completed readme document.
-
-if you **really** need this.. try [**Manually Install**](#manually-install) below. It won't affected by Cocoapods' issue.
-
 ## Overview
 
 [![Demo Video](http://img.youtube.com/vi/ClMyA7V0ub8/0.jpg)](https://www.youtube.com/watch?v=ClMyA7V0ub8)
 
-**SoafSwitch** is a custom view replacing **UISwitch**. 
-
-SoafSwitch focuses on full customization avaliablility, so you can customize it as you designed so far.
+(click to view SoafSwitch Demo Video)
 
 
 
-SoafSwitch is `@IBDesignable`, so you can configure the switch in Interface Builder with live preview.
+**SoafSwitch** is a custom view which replacing **UISwitch**. 
+
+SoafSwitch is focused on full customization avaliablility, so you can customize it as you designed so far.
+
+SoafSwitch uses `@IBDesignable`, so you can configure the switch in Interface Builder with live preview.
 
 
 
-## How to Use
+## How to Customize
 
-if you installed SoafSwitch with Cocoapods, you should implement this code to use SoafSwitch
+* Note : You should specify at least **Bar image/color**, **Thumb image/color**, and **Thumb Size** to get actual view of switch.
+
+1. Drag a **View** into your xib view. **This will became a switch**.
+2. Open **Identity inspector**, set view's class as `SoafSwitch`.
+
+then.. try one of the them! 
+
+### In Interface Builder
+
+If you want to customize in Interface Builder, continue to Attributes Inspector and ta-da-! Now Customize as you want! 
+
+### In Swift
+
+**If you installed SoafSwitch with Cocoapods, you should implement this code first to use SoafSwitch.**
 
 ```Swift
 import SoafSwitch
 ```
+
+
+
+1. Make an @IBOutlet connection with SoafSwitch View.
+
+```Swift
+class ViewController: UIViewController{
+    @IBOutlet weak var soafSwitch: SoafSwitch!
+    
+    ...
+}
+```
+
+
+
+2. 
 
 ## Example
 
@@ -58,7 +85,23 @@ it, simply add the following line to your Podfile:
 pod 'SoafSwitch'
 ```
 
-then, 
+#### Cocoapods 1.5.0v~ issue
+
+[`@IBDesignable` has a problem with Cocoapods version after 1.5.0](https://github.com/CocoaPods/CocoaPods/issues/7606)
+
+To workaround this, add following code in your podfile.
+
+```Ruby
+# Workaround for Cocoapods issue #7606
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+end
+```
+
+Original solution from : [soleares](https://github.com/CocoaPods/CocoaPods/issues/7606#issuecomment-381279098)
 
 ### Manually Install
 

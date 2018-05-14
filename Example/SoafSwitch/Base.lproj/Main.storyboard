@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,696 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="oafSwitch Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-OY-Gyu">
+                                <rect key="frame" x="41" y="48" width="255" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal UISwitch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEA-Sy-v3E">
+                                <rect key="frame" x="24" y="96.5" width="272" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mm9-kk-ua8">
+                                <rect key="frame" x="24" y="120.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SoafSwitch with Interface Builder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzv-IC-fmx">
+                                <rect key="frame" x="24" y="171.5" width="272" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-dP-zEw" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="24" y="195" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="WuL-Wz-vPy"/>
+                                    <constraint firstAttribute="height" constant="31" id="xJ7-Ty-XJT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOnColor">
+                                        <color key="value" red="0.32156862745098042" green="0.83137254901960789" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="28" height="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbShadowOffset">
+                                        <size key="value" width="0.0" height="2.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowOpacity">
+                                        <real key="value" value="0.23999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOffColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOffColor">
+                                        <color key="value" red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barBorderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderOffColor">
+                                        <color key="value" red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbBorderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-D3-yS5" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="166" y="195" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="oqr-Tb-ZS0"/>
+                                    <constraint firstAttribute="width" constant="51" id="spf-hE-20K"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOnColor">
+                                        <color key="value" red="0.9135681905864198" green="0.90534054488607596" blue="0.11321575317126992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="26" height="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barRoundness">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbRoundness">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOffColor">
+                                        <color key="value" white="0.83602189429012341" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bq8-6z-hKI" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="237" y="195" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="1Rp-Cf-rR0"/>
+                                    <constraint firstAttribute="width" constant="51" id="vld-kg-exk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOnColor">
+                                        <color key="value" red="0.63950895065872215" green="0.89732831790123457" blue="0.53549330969660625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="0.57139756944444442" green="0.6191050649833939" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="18" height="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barRoundness">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbRoundness">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" red="0.57647058823529407" green="0.62745098039215685" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOffColor">
+                                        <color key="value" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVN-Uv-nKJ" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="28" y="234" width="45" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="N36-N0-Xhr"/>
+                                    <constraint firstAttribute="width" constant="45" id="z46-BA-d2C"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOnColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="0.47407889660493829" green="0.79722463348765427" blue="0.79727285879629628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="24" height="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barRoundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbRoundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOffColor">
+                                        <color key="value" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOnColor">
+                                        <color key="value" red="0.47407889660493829" green="0.79722463348765427" blue="0.79727285879629628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKE-Sa-2ol" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="95" y="234" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Nlq-D3-yHl"/>
+                                    <constraint firstAttribute="width" constant="51" id="Rfr-WA-0e2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOnColor">
+                                        <color key="value" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="1" green="0.73052903164814798" blue="0.79727285879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="14" height="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barRoundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbRoundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" white="0.8744815779320988" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOffColor">
+                                        <color key="value" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SoafSwitch with Swift Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-wB-CcL">
+                                <rect key="frame" x="24" y="285" width="272" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He6-Lr-gJH">
+                                <rect key="frame" x="24" y="309" width="272" height="50"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See the &quot;ViewController.swift&quot; file" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-ZT-ide">
+                                        <rect key="frame" x="55" y="19" width="163" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k88-5C-R6V" customClass="SoafSwitch" customModule="SoafSwitch">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8kZ-2v-oci"/>
+                                            <constraint firstAttribute="width" constant="55" id="ePE-if-5w1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-iw-AZP" customClass="SoafSwitch" customModule="SoafSwitch">
+                                        <rect key="frame" x="71" y="0.0" width="55" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="Hde-5t-IuR"/>
+                                            <constraint firstAttribute="height" constant="30" id="d9f-ZM-ban"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Tk-ve-IDv" customClass="SoafSwitch" customModule="SoafSwitch">
+                                        <rect key="frame" x="142" y="0.0" width="55" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="CN1-Tu-KOq"/>
+                                            <constraint firstAttribute="height" constant="30" id="cDc-B6-JBG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4mT-JG-8gD"/>
+                                    <constraint firstItem="rhc-ZT-ide" firstAttribute="centerX" secondItem="He6-Lr-gJH" secondAttribute="centerX" id="FGF-WA-4wl"/>
+                                    <constraint firstItem="k88-5C-R6V" firstAttribute="top" secondItem="He6-Lr-gJH" secondAttribute="top" id="HjG-Od-CeR"/>
+                                    <constraint firstItem="k88-5C-R6V" firstAttribute="leading" secondItem="He6-Lr-gJH" secondAttribute="leading" id="RsS-xp-kPA"/>
+                                    <constraint firstItem="8ie-iw-AZP" firstAttribute="top" secondItem="He6-Lr-gJH" secondAttribute="top" id="WQs-Xd-ZqH"/>
+                                    <constraint firstItem="8ie-iw-AZP" firstAttribute="leading" secondItem="k88-5C-R6V" secondAttribute="trailing" constant="16" id="Yvo-QP-iU3"/>
+                                    <constraint firstItem="6Tk-ve-IDv" firstAttribute="top" secondItem="He6-Lr-gJH" secondAttribute="top" id="g5s-iz-UEO"/>
+                                    <constraint firstItem="6Tk-ve-IDv" firstAttribute="leading" secondItem="8ie-iw-AZP" secondAttribute="trailing" constant="16" id="pQP-bY-BKq"/>
+                                    <constraint firstItem="rhc-ZT-ide" firstAttribute="centerY" secondItem="He6-Lr-gJH" secondAttribute="centerY" id="uBM-QR-lsO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sz-yc-kff" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="166" y="234" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="kvk-4B-2DL"/>
+                                    <constraint firstAttribute="height" constant="31" id="tY2-nf-rTx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOnColor">
+                                        <color key="value" red="0.32156862749999998" green="0.83137254900000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbShadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOffColor">
+                                        <color key="value" red="0.85027247299999997" green="0.85027247299999997" blue="0.85027247299999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbOnImage" value="thumbImage"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbOffImage" value="thumbImage"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-Op-1Je" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="237" y="234" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="R6E-90-TpD"/>
+                                    <constraint firstAttribute="height" constant="31" id="vuz-rb-efl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOnColor">
+                                        <color key="value" red="0.32156862749999998" green="0.83137254900000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="0.88885110249999999" green="1" blue="0.82005931710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbShadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barOffColor">
+                                        <color key="value" red="0.85027247299999997" green="0.85027247299999997" blue="0.85027247299999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" red="0.39069733800000001" green="0.39069733800000001" blue="0.39069733800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUA-FJ-OHw" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="95" y="195" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="SzK-8h-MlX"/>
+                                    <constraint firstAttribute="height" constant="31" id="jGb-yY-lIJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="0.99164496527777779" green="0.81365611203358557" blue="0.051875331601324723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="24" height="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbShadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOffColor">
+                                        <color key="value" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderOffColor">
+                                        <color key="value" white="0.80115499614197527" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbBorderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOnColor">
+                                        <color key="value" white="0.2998046875" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="barShadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barShadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderOnColor">
+                                        <color key="value" red="0.94687982253086422" green="0.76354668574860995" blue="0.14180822187835637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Switch Action Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bel-sG-zAU">
+                                <rect key="frame" x="24" y="367" width="272" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8WC-Xm-Gea" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="245" y="391" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="GpL-5D-IpT"/>
+                                    <constraint firstAttribute="height" constant="31" id="d9a-DK-xWf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="0.99164496530000001" green="0.81365611199999999" blue="0.051875331599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="24" height="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbShadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOffColor">
+                                        <color key="value" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderOffColor">
+                                        <color key="value" white="0.80115499609999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbBorderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOnColor">
+                                        <color key="value" white="0.2998046875" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="barShadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barShadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderOnColor">
+                                        <color key="value" red="0.94687982250000002" green="0.76354668569999995" blue="0.1418082219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action with addTarget()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-0H-D4j">
+                                <rect key="frame" x="24" y="398" width="161" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8M-mv-RdA">
+                                <rect key="frame" x="24" y="504" width="272" height="44"/>
+                                <color key="backgroundColor" red="0.94687982250000002" green="0.76354668569999995" blue="0.1418082219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ac7-8J-jOb"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-zb-KXb">
+                                <rect key="frame" x="218.5" y="400" width="18.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMh-oM-5cv" customClass="SoafSwitch" customModule="SoafSwitch">
+                                <rect key="frame" x="245" y="430" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="ZQ6-fh-BDO"/>
+                                    <constraint firstAttribute="width" constant="51" id="to8-8a-W8d"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="barIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOnColor">
+                                        <color key="value" red="0.99164496530000001" green="0.81365611199999999" blue="0.051875331599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                        <size key="value" width="24" height="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="thumbIsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="thumbShadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOffColor">
+                                        <color key="value" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbOffColor">
+                                        <color key="value" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderOffColor">
+                                        <color key="value" white="0.80115499609999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbBorderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barBorderOnColor">
+                                        <color key="value" white="0.2998046875" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barShadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="barShadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barShadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barShadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderOnColor">
+                                        <color key="value" red="0.94687982250000002" green="0.76354668569999995" blue="0.1418082219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action with delegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nt-rW-vOW">
+                                <rect key="frame" x="24" y="437" width="140" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RND-rp-2e9">
+                                <rect key="frame" x="219" y="439" width="18.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrF-J1-lVK">
+                                <rect key="frame" x="24" y="48" width="18" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="textColor" red="0.94687982250000002" green="0.76354668569999995" blue="0.1418082219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8WC-Xm-Gea" firstAttribute="top" secondItem="bel-sG-zAU" secondAttribute="bottom" constant="8" id="06M-mG-YrJ"/>
+                            <constraint firstItem="NUA-FJ-OHw" firstAttribute="top" secondItem="nzv-IC-fmx" secondAttribute="bottom" constant="8" id="0sM-le-yrn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bel-sG-zAU" secondAttribute="trailing" constant="8" id="1iU-RC-QNC"/>
+                            <constraint firstItem="2Nt-rW-vOW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="29r-sx-3ME"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ubN-wB-CcL" secondAttribute="trailing" constant="8" id="4EJ-em-3J8"/>
+                            <constraint firstItem="He6-Lr-gJH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="5Wh-Tx-UQ2"/>
+                            <constraint firstItem="VKE-Sa-2ol" firstAttribute="top" secondItem="NUA-FJ-OHw" secondAttribute="bottom" constant="8" id="5nU-Dr-qyd"/>
+                            <constraint firstItem="IUg-D3-yS5" firstAttribute="leading" secondItem="NUA-FJ-OHw" secondAttribute="trailing" constant="20" id="6w9-uu-8k7"/>
+                            <constraint firstItem="8Sz-yc-kff" firstAttribute="top" secondItem="IUg-D3-yS5" secondAttribute="bottom" constant="8" id="7Jw-sd-AYi"/>
+                            <constraint firstItem="He6-Lr-gJH" firstAttribute="top" secondItem="ubN-wB-CcL" secondAttribute="bottom" constant="8" id="86T-4w-7mt"/>
+                            <constraint firstItem="pRl-zb-KXb" firstAttribute="centerY" secondItem="qPu-0H-D4j" secondAttribute="centerY" id="9H8-32-RlS"/>
+                            <constraint firstItem="nEA-Sy-v3E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="9PD-tA-evF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hMh-oM-5cv" secondAttribute="trailing" constant="8" id="Bad-Ji-38M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8WC-Xm-Gea" secondAttribute="trailing" constant="8" id="D0t-RS-VF7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SwR-OY-Gyu" secondAttribute="trailing" constant="8" id="EFA-Ph-vuo"/>
+                            <constraint firstItem="8WC-Xm-Gea" firstAttribute="leading" secondItem="pRl-zb-KXb" secondAttribute="trailing" constant="8" id="FH0-9z-jDt"/>
+                            <constraint firstItem="hMh-oM-5cv" firstAttribute="leading" secondItem="RND-rp-2e9" secondAttribute="trailing" constant="8" id="FNj-bv-d63"/>
+                            <constraint firstItem="bel-sG-zAU" firstAttribute="top" secondItem="He6-Lr-gJH" secondAttribute="bottom" constant="8" id="FiM-xL-gdI"/>
+                            <constraint firstItem="rsH-Op-1Je" firstAttribute="top" secondItem="bq8-6z-hKI" secondAttribute="bottom" constant="8" id="GUD-Ef-1AY"/>
+                            <constraint firstItem="SwR-OY-Gyu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="28" id="GZK-5i-p9c"/>
+                            <constraint firstItem="8Sz-yc-kff" firstAttribute="leading" secondItem="VKE-Sa-2ol" secondAttribute="trailing" constant="20" id="HS7-HJ-BeV"/>
+                            <constraint firstItem="OrF-J1-lVK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="28" id="KdN-vI-m0h"/>
+                            <constraint firstItem="VKE-Sa-2ol" firstAttribute="leading" secondItem="bVN-Uv-nKJ" secondAttribute="trailing" constant="22" id="KkU-de-RL3"/>
+                            <constraint firstItem="nzv-IC-fmx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="LO4-qo-hud"/>
+                            <constraint firstItem="SwR-OY-Gyu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25.739999999999998" id="MxI-Yu-KNr"/>
+                            <constraint firstItem="bq8-6z-hKI" firstAttribute="top" secondItem="nzv-IC-fmx" secondAttribute="bottom" constant="8" id="O8f-Pp-vVr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="He6-Lr-gJH" secondAttribute="trailing" constant="8" id="Otv-Ed-zUW"/>
+                            <constraint firstItem="8WC-Xm-Gea" firstAttribute="centerY" secondItem="qPu-0H-D4j" secondAttribute="centerY" id="U0y-fR-DCB"/>
+                            <constraint firstItem="rsH-Op-1Je" firstAttribute="leading" secondItem="8Sz-yc-kff" secondAttribute="trailing" constant="20" id="UPD-fC-chq"/>
+                            <constraint firstItem="nzv-IC-fmx" firstAttribute="top" secondItem="Mm9-kk-ua8" secondAttribute="bottom" constant="20" id="WlW-Ld-FAG"/>
+                            <constraint firstItem="m8M-mv-RdA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="X3C-wr-Khh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="m8M-mv-RdA" secondAttribute="bottom" constant="20" id="Zto-FP-kwc"/>
+                            <constraint firstItem="RND-rp-2e9" firstAttribute="centerY" secondItem="2Nt-rW-vOW" secondAttribute="centerY" id="aE0-5p-kl0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m8M-mv-RdA" secondAttribute="trailing" constant="8" id="asp-dl-QSV"/>
+                            <constraint firstItem="ngd-dP-zEw" firstAttribute="top" secondItem="nzv-IC-fmx" secondAttribute="bottom" constant="8" id="cWT-ir-0bY"/>
+                            <constraint firstItem="hMh-oM-5cv" firstAttribute="centerY" secondItem="2Nt-rW-vOW" secondAttribute="centerY" id="eEn-tV-2r9"/>
+                            <constraint firstItem="bq8-6z-hKI" firstAttribute="leading" secondItem="IUg-D3-yS5" secondAttribute="trailing" constant="20" id="eVA-pd-z2T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nzv-IC-fmx" secondAttribute="trailing" constant="8" id="eZu-ed-I6t"/>
+                            <constraint firstItem="Mm9-kk-ua8" firstAttribute="top" secondItem="nEA-Sy-v3E" secondAttribute="bottom" constant="8" id="ezK-rg-9z4"/>
+                            <constraint firstItem="bel-sG-zAU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="fV6-MG-7bK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nEA-Sy-v3E" secondAttribute="trailing" constant="8" id="ftS-x5-F9y"/>
+                            <constraint firstItem="bVN-Uv-nKJ" firstAttribute="top" secondItem="ngd-dP-zEw" secondAttribute="bottom" constant="8" id="itv-Zn-oUl"/>
+                            <constraint firstItem="NUA-FJ-OHw" firstAttribute="leading" secondItem="ngd-dP-zEw" secondAttribute="trailing" constant="20" id="pOG-jV-WVc"/>
+                            <constraint firstItem="qPu-0H-D4j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="phh-ec-1oA"/>
+                            <constraint firstItem="OrF-J1-lVK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="q1i-Aw-dWV"/>
+                            <constraint firstItem="ubN-wB-CcL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="ruz-Ih-6ob"/>
+                            <constraint firstItem="ubN-wB-CcL" firstAttribute="top" secondItem="bVN-Uv-nKJ" secondAttribute="bottom" constant="20" id="srX-C1-28W"/>
+                            <constraint firstItem="hMh-oM-5cv" firstAttribute="top" secondItem="8WC-Xm-Gea" secondAttribute="bottom" constant="8" id="ssT-3a-Dhl"/>
+                            <constraint firstItem="ngd-dP-zEw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="svP-Dw-Nxw"/>
+                            <constraint firstItem="Mm9-kk-ua8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="ul7-Os-Q90"/>
+                            <constraint firstItem="IUg-D3-yS5" firstAttribute="top" secondItem="nzv-IC-fmx" secondAttribute="bottom" constant="8" id="wTT-FY-g5S"/>
+                            <constraint firstItem="nEA-Sy-v3E" firstAttribute="top" secondItem="SwR-OY-Gyu" secondAttribute="bottom" constant="16" id="wZM-mO-OS7"/>
+                            <constraint firstItem="bVN-Uv-nKJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="wkx-e5-scb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionLabel" destination="pRl-zb-KXb" id="2si-Y0-Viq"/>
+                        <outlet property="actionSwitch" destination="8WC-Xm-Gea" id="aB1-KZ-CRu"/>
+                        <outlet property="button" destination="m8M-mv-RdA" id="tBa-rr-2O4"/>
+                        <outlet property="delegateLabel" destination="RND-rp-2e9" id="r7e-bc-DLm"/>
+                        <outlet property="delegateSwitch" destination="hMh-oM-5cv" id="mLA-mw-z72"/>
+                        <outlet property="firstSwitch" destination="k88-5C-R6V" id="Uwc-2y-M3f"/>
+                        <outlet property="secondSwitch" destination="8ie-iw-AZP" id="0kh-VL-yg5"/>
+                        <outlet property="thirdSwitch" destination="6Tk-ve-IDv" id="bAr-HD-QLR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="thumbImage" width="32" height="32"/>
+    </resources>
 </document>

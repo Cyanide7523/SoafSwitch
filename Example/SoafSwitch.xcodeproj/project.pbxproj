@@ -171,6 +171,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				EBED441BC2BCFBA05C0B91EB /* [CP] Embed Pods Frameworks */,
+				AC2E863319ADE85A8D8A579A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +191,7 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				A48DD15E31D0D28C65CF70AB /* [CP] Embed Pods Frameworks */,
+				FB013A2F42A4B9BEAE427027 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TSN52PT9J2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TSN52PT9J2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -316,6 +320,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoafSwitch_Tests/Pods-SoafSwitch_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AC2E863319ADE85A8D8A579A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoafSwitch_Example/Pods-SoafSwitch_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBED441BC2BCFBA05C0B91EB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +351,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoafSwitch_Example/Pods-SoafSwitch_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB013A2F42A4B9BEAE427027 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoafSwitch_Tests/Pods-SoafSwitch_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -488,6 +522,7 @@
 			baseConfigurationReference = 36460D128589BC01D85142C0 /* Pods-SoafSwitch_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TSN52PT9J2;
 				INFOPLIST_FILE = SoafSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -503,6 +538,7 @@
 			baseConfigurationReference = EE00770C18EC918D1C6F39EA /* Pods-SoafSwitch_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TSN52PT9J2;
 				INFOPLIST_FILE = SoafSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -517,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BD02F28AD8DB823978E1324 /* Pods-SoafSwitch_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TSN52PT9J2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -538,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 596FB9BC8303ED715FF6A6EF /* Pods-SoafSwitch_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TSN52PT9J2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

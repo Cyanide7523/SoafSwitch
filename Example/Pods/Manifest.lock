@@ -4,24 +4,20 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SoafSwitch (0.1.0)
+  - SoafSwitch (0.1.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
   - SoafSwitch (from `../`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
-
 EXTERNAL SOURCES:
   SoafSwitch:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SoafSwitch: b7b01a76b45f8b499e2b33227cb8d43947a94b0f
+  SoafSwitch: 6d1b19ff45f77b6fedb8826191cb0f65d6024f34
 
 PODFILE CHECKSUM: d560dc7f0ce1eadbd4e1b83838d70c62cb8b0f1f
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.4.0
